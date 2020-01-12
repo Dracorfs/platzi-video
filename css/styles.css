@@ -150,3 +150,30 @@ body {
 .carousel-item__details:hover{
     opacity: 1;
 }
+
+/*FOOTER*/
+.footer{
+    background-color: rgba(33, 192, 139,0.1);
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+.footer a{
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+
+/*RESPONSIVE DESIGN*/
+@media only screen and (max-width: 600px){
+    .footer{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
