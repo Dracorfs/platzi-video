@@ -96,7 +96,7 @@ body {
 .carousel{
     width: 100%;
     overflow: scroll;
-    padding: 30px;
+    padding: 45px;
     position: relative;
 }
 .carousel::-webkit-scrollbar{
