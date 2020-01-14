@@ -11,4 +11,5 @@ This career includes the following courses:
 - [Curso de Backend con Node.js](https://platzi.com/cursos/backend-nodejs/)
 - [Curso de Autenticación con Passport.js](https://platzi.com/cursos/passport/)
 - [Curso de Integración Backend con Frontend](https://platzi.com/cursos/bff/)
-####It is important to say that this is my own version of the project although it is based on the example.
+
+### It is important to say that this is my own version of the project although it is based on the example.
