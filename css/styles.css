@@ -3,7 +3,9 @@ body {
     font-family: 'Muli', sans-serif;
     background: linear-gradient(#9313b9,#2178c0);
 }
-
+.button{
+    outline: none;
+}
 /*HEADER*/
 .header{
     background-color: rgba(146, 19, 185,0.1);

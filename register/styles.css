@@ -2,6 +2,9 @@ body {
     margin: 0;
     font-family: 'Muli', sans-serif;
 }
+.button{
+    outline: none;
+}
 header{
     background-color: #9313b9;
     width: 100%;
