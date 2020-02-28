@@ -6,6 +6,9 @@ body {
 .button{
     outline: none;
 }
+a{
+    color: white;
+}
 /*HEADER*/
 .header{
     background-color: rgba(146, 19, 185,0.1);
@@ -94,18 +97,37 @@ body {
     font-size: 16px;
     position: absolute;
     padding-left: 30px;
-    width: 100%;
 }
 
 .carousel{
-    width: 100%;
     overflow: scroll;
     padding: 45px;
     position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
 }
-.carousel::-webkit-scrollbar{
-    display: none;
-}
+/*SCROLLBAR*/
+    .carousel::-webkit-scrollbar {
+        width: 12px;
+    }
+    .carousel::-webkit-scrollbar:vertical {
+        display: none;
+    }
+    .carousel::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        border-radius: 10px;
+    }
+    .carousel::-webkit-scrollbar-track-piece {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+    }
+    .carousel::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    }
+    .carousel::-webkit-scrollbar-corner{
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    }
+
 .carousel__container{
     white-space: nowrap;
     margin: 20px 0px;
@@ -123,6 +145,18 @@ body {
     transform-origin: center left;
     position: relative;
 }
+.carousel-final-item{
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 30px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center right;
+    position: relative;
+}
 .carousel-item:hover ~ .carousel-item{
     transform: translate3d(100px, 0, 0);
 }
@@ -133,11 +167,22 @@ body {
     transform: scale(1.5);
     opacity: 1;
 }
+.carousel-item:hover ~ .carousel-final-item{
+    transform: translate3d(100px, 0, 0);
+}
+.carousel__container:hover .carousel-final-item{
+    opacity: 0.3;
+}
+.carousel__container:hover .carousel-final-item:hover{
+    transform: scale(1.5);
+    opacity: 1;
+}
 .carousel-item__img{
     width: 200px;
     height: 250px;
     object-fit: cover;
 }
+
 
 .carousel-item__details {
   align-items: flex-start;
@@ -298,6 +343,9 @@ body {
 
 /*RESPONSIVE DESIGN*/
 @media only screen and (max-width: 600px){
+    .carousel::-webkit-scrollbar{
+        display: none;
+    }
     .footer{
         align-items: flex-start;
         flex-direction: column;
