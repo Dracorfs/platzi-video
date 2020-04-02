@@ -329,6 +329,12 @@ a{
 
 /*RESPONSIVE DESIGN*/
 @media only screen and (max-width: 600px){
+    .header__menu{
+        margin-right: 10px;
+    }
+    .header__menu ul{
+        background: linear-gradient( rgba(147, 19, 185,0.1), rgba(147, 19, 185,1)) ;
+    }
     .carousel::-webkit-scrollbar{
         display: none;
     }
