@@ -145,17 +145,9 @@ a{
     transform-origin: center left;
     position: relative;
 }
-.carousel-final-item{
-    width: 200px;
-    height: 250px;
-    border-radius: 20px;
-    overflow: hidden;
+.carousel-item:last-child{
     margin-right: 30px;
-    display: inline-block;
-    cursor: pointer;
-    transition: 450ms all;
     transform-origin: center right;
-    position: relative;
 }
 .carousel-item:hover ~ .carousel-item{
     transform: translate3d(100px, 0, 0);
@@ -164,16 +156,6 @@ a{
     opacity: 0.3;
 }
 .carousel__container:hover .carousel-item:hover{
-    transform: scale(1.5);
-    opacity: 1;
-}
-.carousel-item:hover ~ .carousel-final-item{
-    transform: translate3d(100px, 0, 0);
-}
-.carousel__container:hover .carousel-final-item{
-    opacity: 0.3;
-}
-.carousel__container:hover .carousel-final-item:hover{
     transform: scale(1.5);
     opacity: 1;
 }
