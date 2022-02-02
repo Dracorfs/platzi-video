@@ -1,0 +1,33 @@
+@media only screen and (max-width: 600px){
+    .header__menu{
+        margin-right: 10px;
+    }
+    .header__menu ul{
+        background: linear-gradient( rgba(147, 19, 185,0.1), rgba(147, 19, 185,1)) ;
+    }
+    .carousel::-webkit-scrollbar{
+        display: none;
+    }
+    .footer{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .notFound{
+        height: 520px;
+    }
+    .notFound__title{
+        font-size: 40px;
+    }
+    .login__container{
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        width: 100%;
+    }
+    .register__container{
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        width: 100%;
+    }
+}
