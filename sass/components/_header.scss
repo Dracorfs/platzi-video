@@ -1,5 +1,5 @@
 .header{
-    background-color: rgba(146, 19, 185,0.1);
+    background-color: rgba(146, 11, 187, 0.1);
     width: 100%;
     height: 80px;
     display: flex;
@@ -23,7 +23,7 @@
     list-style: none;
     padding: 0;
     position: absolute;
-    width: 100px;
+    width: 60px;
     text-align: right;
     margin: 0px 0px 0px -14px;
 }
@@ -37,16 +37,7 @@
     color: white;
     text-decoration: none;
 }
-.header__menu--profile{
-    margin-right: 8px;
-    display: flex;
-    align-items: center;
-}
-.header__menu--profile img{
+.header__menu img{
     margin-right: 8px;
     width: 40px;
-}
-.header__menu--profile p{
-    margin-right: 0px;
-    color: white;
 }
